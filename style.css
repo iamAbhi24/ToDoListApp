@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
+    width:100vw;
+    height:100vh;
+}
+
+.ToDoList{
+    background-color: white;
+    margin:auto;
+    padding: 20px 20px  ;
+    border-radius: 5px;
+    max-height: 100%;
+    max-width: 400px;
+}
+
+.ToDoList h2 img{
+    width: 30px;
+    margin: 5px 0px 0px ;
+}
+.ToDoList h2{
+    display: flex;
+}
+
+
