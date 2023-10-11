@@ -4,27 +4,65 @@
     box-sizing: border-box;
 }
 
-.container{
+body{
     background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
-    width:100vw;
-    height:100vh;
 }
+/* .container{
+    background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
+    width:100%;
+    min-height:100vh;
+} */
 
 .ToDoList{
     background-color: white;
-    margin:auto;
-    padding: 20px 20px  ;
+    margin: 50px auto;
+    padding: 30px 20px;
     border-radius: 5px;
     max-height: 100%;
     max-width: 400px;
 }
 
+
 .ToDoList h2 img{
     width: 30px;
-    margin: 5px 0px 0px ;
+    vertical-align:top;
 }
-.ToDoList h2{
-    display: flex;
+
+
+.row input{
+    margin-top: 5px;
+    width: 300px;
+    border-radius:50px;
+    padding: 10px;
+    background-color: rgb(232, 229, 229);
+    border: none;
+    outline: none;
+}   
+
+#add_btn{
+    margin-left: -30px;
+    padding:10px 25px;
+    border-radius: 60px;
+    background-color: rgb(131, 197, 131);
+    border: none;
+    color:whitesmoke;
+    cursor: pointer;
 }
+ul{
+    list-style-type: none;
+    margin: 20px;
+}
+
+ ul li{
+    margin: 10px 0px;
+}
+
+/* ul li::before{
+
+    
+} */
+
+
+
 
 
