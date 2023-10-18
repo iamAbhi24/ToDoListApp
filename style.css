@@ -7,11 +7,7 @@
 body{
     background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
 }
-/* .container{
-    background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
-    width:100%;
-    min-height:100vh;
-} */
+
 
 .ToDoList{
     background-color: white;
@@ -55,14 +51,33 @@ ul{
 
  ul li{
     margin: 10px 0px;
+    position: relative;
+    user-select: none;
 }
 
-/* ul li::before{
 
+
+
+ul li::before {
+    content: "";  
+    background-image: url("img/unchecked.png"); 
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked::before{
+    content: "";  
+    background-image: url("img/checked.png");
     
-} */
+}
 
-
-
+ul li.checked{
+    text-decoration: line-through;
+}
 
 
