@@ -57,7 +57,7 @@ ul{
 
 
 
-
+/* for chcecked and unchecked symbol before each list element */
 ul li::before {
     content: "";  
     background-image: url("img/unchecked.png"); 
@@ -80,4 +80,20 @@ ul li.checked{
     text-decoration: line-through;
 }
 
+
+/* for cross symbol at right */
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius:50%;
+    font-size: 15px;
+    color: #ff0000;
+   
+}
+span:hover{
+    background-color:#D3D3D3;
+}
 
