@@ -1,61 +1,56 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
 }
 
-
-.ToDoList{
+.ToDoList {
     background-color: white;
     margin: 50px auto;
     padding: 30px 20px;
     border-radius: 5px;
-    max-height: 100%;
-    max-width: 400px;
+    max-width: 50vw;
 }
 
-
-.ToDoList h2 img{
+.ToDoList h2 img {
     width: 30px;
-    vertical-align:top;
+    vertical-align: top;
 }
 
-
-.row input{
+.row input {
     margin-top: 5px;
-    width: 300px;
-    border-radius:50px;
+    width: 80%;
+    border-radius: 50px;
     padding: 10px;
     background-color: rgb(232, 229, 229);
     border: none;
     outline: none;
-}   
+}
 
-#add_btn{
+#add_btn {
     margin-left: -30px;
-    padding:10px 25px;
+    padding: 10px 25px;
     border-radius: 60px;
     background-color: rgb(131, 197, 131);
     border: none;
-    color:whitesmoke;
+    color: whitesmoke;
     cursor: pointer;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 20px;
 }
 
- ul li{
+ul li {
     margin: 10px 0px;
     position: relative;
     user-select: none;
 }
-
-
 
 /* for chcecked and unchecked symbol before each list element */
 ul li::before {
@@ -94,6 +89,24 @@ ul li span{
    
 }
 span:hover{
-    background-color:#D3D3D3;
+    background-color: #3c1313;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .ToDoList {
+        max-width: 80vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .ToDoList {
+        max-width: 90vw; 
+    }
+
+    ul li span {
+        font-size: 12px;
+    }
+}
+
 

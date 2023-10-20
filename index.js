@@ -18,7 +18,7 @@ function addTask() {
   
         // removing task
         
-       
+        saveTask();
     }
     input.value = "";   // clear the input field after adding the task
 }
@@ -27,13 +27,29 @@ function addTask() {
 list_container.addEventListener("click", function(e){
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked");
+        saveTask();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        saveTask();
     }
 },false);
 
+// adding local storage concept
 
+function saveTask(){
+    localStorage.setItem("data",list_container.innerHTML);
+}
+
+function showTask(){
+    const showTask =localStorage.getItem("data");
+    if(showTask)
+    {
+    list_container.innerHTML=showTask;
+    }
+}
+
+showTask();
 
 
 
